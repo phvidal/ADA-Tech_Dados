@@ -7,9 +7,17 @@ Placeholder == guardando espaço um código
 
 """
 
-cont = 0
-while cont < 10:
-    cont += 1
-    if cont == 5:
-        print('chegamos na condição')
-    print(cont)
+# cont = 0
+# while cont < 10:
+#     cont += 1
+#     if cont == 5:
+#         print('chegamos na condição')
+#     print(cont)
+
+
+lista = [12,-7,8,5,9,12,1,1,8,5,-7]
+
+for i in lista:
+  while lista.count(i) > 1:
+    lista.remove(i)
+print(lista)
