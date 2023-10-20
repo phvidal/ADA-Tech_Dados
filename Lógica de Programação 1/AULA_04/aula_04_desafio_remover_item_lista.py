@@ -10,10 +10,23 @@ remover = 1
 
 
 """
+# RESPOSTA CHAT GPT
+# lista = ["1", 1, 456, 29485, 2845, 1, "1", 25, 30, "25"]
+# numero_a_remover = "1"
+
+# lista_resultante = [item for item in lista if str(item) != str(numero_a_remover)]
+
+# print(lista_resultante)
 
 lista = ["1", 1, 456, 29485, 2845, 1, "1", 25, 30, "25"]
 numero_a_remover = "1"
+nova = []
+i = 0
 
-lista_resultante = [item for item in lista if str(item) != str(numero_a_remover)]
+while i < len(lista):
+    if str(lista[i]) != str(numero_a_remover): #aqui ta perguntando se '0' é diferente de '1'
+        nova.append(lista[i])
+    i += 1
 
-print(lista_resultante)
+print(nova)
+
