@@ -15,9 +15,14 @@ Placeholder == guardando espaço um código
 #     print(cont)
 
 
-lista = [12,-7,8,5,9,12,1,1,8,5,-7]
+# lista = [12,-7,8,5,9,12,1,1,8,5,-7]
 
-for i in lista:
-  while lista.count(i) > 1:
-    lista.remove(i)
-print(lista)
+# for i in lista:
+#   while lista.count(i) > 1:
+#     lista.remove(i)
+# print(lista)
+
+from random import randint
+
+hora = randint(0, 24)
+print(hora)
