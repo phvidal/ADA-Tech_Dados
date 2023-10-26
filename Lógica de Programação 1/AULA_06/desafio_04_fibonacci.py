@@ -8,15 +8,15 @@ Faça um programa que gere a série até que o valor seja maior que um valor inf
 
 numero_usr = int(input('Digite um número: '))
 fibonacci = 0
-contador = 1
-soma = 0
+contador = 0
+soma = 1
 
 while numero_usr > fibonacci:
-    fibonacci = fibonacci + contador
-    contador = fibonacci
-    soma += 1
-
+    fibonacci = fibonacci + soma
+    contador += 1
+    soma = contador
 
 print(f'O número que o usuário digitou foi: {numero_usr}')
-print(f'O Fibonacci ultrapassou o número do usuário alcançando o número: {fibonacci}, para isso precisou executar {soma} operações de adição.')
+print(f'O Fibonacci ultrapassou o número do usuário alcançando o número: {fibonacci}, para isso precisou executar {contador} operações de adição.')
 
+#arrumar o código pois está dobrando, e tem que somar o último com o penúltimo! 
