@@ -7,10 +7,14 @@ Sabendo disso, crie uma função retornaPenultimoEQuartoElementodeLista() que re
 """
 
 def retornaPenultimoEQuartoElementodeLista(tuplaA):
+        quarto_elemento = []
+        penultimo_elemento = []
+        resultado = quarto_elemento + penultimo_elemento
+
         if len(tuplaA) >= 4:
-                quarto_elemento = tuplaA[3]
-                penultimo_elemento = tuplaA[-2]
-                return(quarto_elemento, penultimo_elemento)
+                quarto_elemento.append(tuplaA[3])
+                penultimo_elemento.append(tuplaA[-2])
+                return quarto_elemento + penultimo_elemento
         else:
                 return "A lista não possui pelo menos 4 elementos."
 
