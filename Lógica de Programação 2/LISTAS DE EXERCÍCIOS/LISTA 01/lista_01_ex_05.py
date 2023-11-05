@@ -27,3 +27,22 @@ def ultimoElementoLista2D(listaA):
 
 lista_teste = [[192, 193, 194], [507, 508, 509], [526, 527, 528, 529], [560, 561], [635, 636, 637]]
 print(ultimoElementoLista2D(lista_teste))
+
+# Código mais detalhado:
+# def ultimoElementoLista2D(lista2D):
+#     # Inicializamos uma lista vazia para armazenar os últimos elementos de cada sublista.
+#     ultimos_elementos = []
+
+#     # Percorremos cada sublista na lista de duas dimensões.
+#     for sublista in lista2D:
+#         # Obtemos o último elemento de cada sublista usando [-1] e o adicionamos à lista de últimos elementos.
+#         ultimo_elemento = sublista[-1]
+#         ultimos_elementos.append(ultimo_elemento)
+
+#     # Retornamos a lista de últimos elementos.
+#     return ultimos_elementos
+
+# # Exemplo de uso:
+# lista = [[192, 193, 194], [507, 508, 509], [526, 527, 528, 529], [560, 561], [635, 636, 637]]
+# resultado = ultimoElementoLista2D(lista)
+# print(resultado)
