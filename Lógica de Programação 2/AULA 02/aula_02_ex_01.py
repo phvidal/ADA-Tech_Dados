@@ -14,6 +14,29 @@ O programa deverá permitir que o usuário digite 10 chaves e 10 valores e 1 val
 
 """
 
+def busca(dicionario, valor):
+    chaves = []
+    for c, v in dicionario.items():
+        if v == valor:
+            chaves.append(c) # adiciona a chave
+
+    return chaves
+
+dicionario_usr = {}
+for _ in range(10):
+    chave = input('Digite um chave: ')
+    valor = input('Digite um valor: ')
+    dicionario_usr.update({chave:valor})
+
+valor_procurado = input('Valor a ser buscado: ')
+
+
+resultado = busca(dicionario_usr, valor_procurado)
+print(resultado)
+
+
+
+
 # def busca(dicionario: dict, valor: int):
 
 
@@ -52,29 +75,32 @@ O programa deverá permitir que o usuário digite 10 chaves e 10 valores e 1 val
 #       saida.append(chave)
 #   return saida
 
-def dicionario_valor(dicionario, valor):
-    lista = []
-    for chave, valor_dicionario in dicionario.items():
-        if valor == valor_dicionario:
-            lista.append(chave)
-    return lista
 
-qtd = int(input('Quantos valores quer digitar: '))
-while qtd <= 0 or qtd > 10:
-    qtd = int(input('Quantidade invalida (entre 1 e 10) quantos valores quer digitar: '))
+
+
+# def dicionario_valor(dicionario, valor):
+#     lista = []
+#     for chave, valor_dicionario in dicionario.items():
+#         if valor == valor_dicionario:
+#             lista.append(chave)
+#     return lista
+
+# qtd = int(input('Quantos valores quer digitar: '))
+# while qtd <= 0 or qtd > 10:
+#     qtd = int(input('Quantidade invalida (entre 1 e 10) quantos valores quer digitar: '))
     
-dicionario = {}
-for i in range (0, qtd):
-    chave = input(f'Qual a {i + 1} chave: ')
-    valor = int(input(f'Qual o {i + 1} valor: '))
-    while chave in dicionario:
-        print('Chave repetida!')
-        chave = input(f'Qual a {i + 1} chave: ')
-    dicionario.update({chave: valor})
+# dicionario = {}
+# for i in range (0, qtd):
+#     chave = input(f'Qual a {i + 1} chave: ')
+#     valor = int(input(f'Qual o {i + 1} valor: '))
+#     while chave in dicionario:
+#         print('Chave repetida!')
+#         chave = input(f'Qual a {i + 1} chave: ')
+#     dicionario.update({chave: valor})
 
-valor = int(input('Qual valor deseja buscar: '))
-lista = dicionario_valor(dicionario, valor)
-if len(lista) == 0:
-    print ("Não tem chave com esse valor")
-else:
-    print(lista)
+# valor = int(input('Qual valor deseja buscar: '))
+# lista = dicionario_valor(dicionario, valor)
+# if len(lista) == 0:
+#     print ("Não tem chave com esse valor")
+# else:
+#     print(lista)
