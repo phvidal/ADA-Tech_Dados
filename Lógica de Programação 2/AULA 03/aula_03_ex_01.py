@@ -13,7 +13,7 @@ def lista_palavras_com_a(frase):
     # SOLUÇÃO THIAGO TEIXEIRA
     return [palavra for palavra in frase.lower().split() if palavra.startswith("a")]
 
-teste = "Minha casa amarela, mor, ora, palavra leatória"
+teste = "Minha casa amarela, mor, ora, palavra aleatória"
 resultado = lista_palavras_com_a(teste)
 print(resultado)
 print(type(resultado))
