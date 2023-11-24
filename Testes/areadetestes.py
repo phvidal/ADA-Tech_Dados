@@ -1,3 +1,3 @@
-arquivo = open('ola.txt', 'w') # cria um arquivo ola.txt
-arquivo.write('Olá mundo') # escreve "Olá mundo" no arquivo
-arquivo.close() # fecha e salva o arquivo
+num = [10, 20, 30, 40, 50]
+num[2:4]=[]
+print(num)
